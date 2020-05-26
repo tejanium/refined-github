@@ -13,6 +13,7 @@ function featureWasRenamed(from: string, to: string): Migration<RGHOptions> {
 // TypeScript doesn't merge the definitions so `...` is not equivalent.
 const defaults = Object.assign({
 	customCSS: '',
+	customScript: '',
 	personalToken: '',
 	logging: false
 }, __featuresOptionDefaults__); // This variable is replaced at build time
